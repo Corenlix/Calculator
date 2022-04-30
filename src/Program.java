@@ -1,16 +1,18 @@
+import Parser.CalculationParser;
+
 import java.util.Scanner;
 
 public class Program {
-    static Scanner scanner;
+    private static Scanner scanner;
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
         scanner = new Scanner(System.in);
         readCalculationInput();
     }
 
-    private static void readCalculationInput(){
+    private static void readCalculationInput() {
         String input = scanner.nextLine();
-        double result = CalculationParser.Calculate(input);
+        String result = CalculationParser.calculate(input);
         System.out.println(result);
     }
 }

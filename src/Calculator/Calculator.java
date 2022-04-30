@@ -1,6 +1,8 @@
+package Calculator;
+
 public class Calculator {
-    public static double calculateOperation(int a, int b, char operation) throws ArithmeticException{
-        switch (operation){
+    public static int calculateOperation(int a, int b, char operation) throws ArithmeticException {
+        switch (operation) {
             case '+':
                 return a + b;
             case '-':
@@ -8,7 +10,7 @@ public class Calculator {
             case '*':
                 return a * b;
             case '/':
-                return (double)a / b;
+                return a / b;
         }
 
         throw new ArithmeticException();
